@@ -1,33 +1,36 @@
 ﻿using UnityEngine;
 
-namespace StateMachine.Player
+namespace Scripts.StateMachine.Player
 {
     public class PlayerTestState : PlayerBaseState
     {
 
-        private float timer = 5f;
+        private float timer = 0f;
         
         public PlayerTestState(PlayerStateMachine stateMachine) : base(stateMachine) { }
 
         public override void Enter()
         {
-            Debug.Log("Entered PlayerTestState");
+            stateMachine.InputReader.JumpEvent += OnJump;
         }
 
         public override void Tick(float deltaTime)
         {
-            timer -= deltaTime;
+            stateMachine.InputReader.JumpEvent -= Enter;
+            
+            timer += deltaTime;
             Debug.Log(timer);
-
-            if (timer <= 0f)
-            {
-                stateMachine.SwitchState(new PlayerTestState(stateMachine));
-            }
+            
         }
 
         public override void Exit()
         {
-            Debug.Log("Exit PlayerTestState");
+            stateMachine.InputReader.JumpEvent -= OnJump;
+        }
+
+        private void OnJump()
+        {
+            stateMachine.SwitchState(new PlayerTestState(stateMachine));
         }
     }
 }

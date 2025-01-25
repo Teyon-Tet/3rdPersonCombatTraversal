@@ -1,4 +1,4 @@
-﻿namespace StateMachine.Player
+﻿namespace Scripts.StateMachine.Player
 {
     public abstract class PlayerBaseState : State
     {

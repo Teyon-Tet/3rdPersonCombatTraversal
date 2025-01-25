@@ -2,13 +2,22 @@
     "name": "Controls",
     "maps": [
         {
-            "name": "Jump",
+            "name": "Player",
             "id": "84fb3233-ae5c-40f9-8cf5-c4672d10c98f",
             "actions": [
                 {
                     "name": "Jump",
                     "type": "Button",
                     "id": "32edc85b-a68a-43ad-b062-99b0977b23ad",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Dodge",
+                    "type": "Button",
+                    "id": "39bf4214-41c6-42c6-ae68-979302c557b5",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -24,6 +33,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a7d4f5b0-a4f2-4790-8c41-2de2a0befbb2",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dodge",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

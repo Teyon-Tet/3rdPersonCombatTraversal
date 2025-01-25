@@ -1,5 +1,5 @@
 
-namespace StateMachine
+namespace Scripts.StateMachine
 {
     public abstract class State
     {
