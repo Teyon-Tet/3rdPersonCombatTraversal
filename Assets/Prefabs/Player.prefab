@@ -1855,7 +1855,7 @@ GameObject:
   - component: {fileID: 7207447164079596835}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1895,8 +1895,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <InputReader>k__BackingField: {fileID: 9092808176466411206}
   <Controller>k__BackingField: {fileID: 7207447164079596835}
-  <Animator>k__BackingField: {fileID: 0}
+  <Animator>k__BackingField: {fileID: 3709767721457883723}
   <FreeLookMovementSpeed>k__BackingField: 6
+  <RotationDamping>k__BackingField: 10
 --- !u!114 &9092808176466411206
 MonoBehaviour:
   m_ObjectHideFlags: 0
