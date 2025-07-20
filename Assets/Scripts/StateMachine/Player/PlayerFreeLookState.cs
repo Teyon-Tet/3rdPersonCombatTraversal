@@ -16,6 +16,12 @@ namespace Scripts.StateMachine.Player
 
         public override void Tick(float deltaTime)
         {
+            
+            
+            //added movement code
+            
+            
+            /*
             Vector3 movement = CalculateMovement();
 
             stateMachine.Controller.Move(movement * stateMachine.FreeLookMovementSpeed * deltaTime);
@@ -28,7 +34,7 @@ namespace Scripts.StateMachine.Player
             
             stateMachine.Animator.SetFloat(FreeLookSpeedHash, 1, AnimatorDampTime, deltaTime);
             FaceMovementDirection(movement, deltaTime);
-
+            */
         }
 
         private void FaceMovementDirection(Vector3 movement, float deltaTime)

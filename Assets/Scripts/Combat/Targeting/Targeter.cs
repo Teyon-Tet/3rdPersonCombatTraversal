@@ -18,11 +18,12 @@ public class Targeter : MonoBehaviour
     
     private void OnTriggerExit(Collider other)
     {
+        
         if (!other.TryGetComponent<Target>(out Target target))
         {
             return;
         }
-        
+
         targets.Remove(target);
         
     }
